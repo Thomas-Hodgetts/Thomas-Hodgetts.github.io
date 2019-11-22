@@ -3815,7 +3815,7 @@ input, select, textarea {
 	#main > header {
 		padding: 12em 0 10em 0 ;
 		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
-		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
+			background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
 		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
 		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
 		background-attachment: fixed;
@@ -3881,6 +3881,91 @@ input, select, textarea {
 	body.is-mobile #main > header {
 		background-attachment: scroll;
 	}
+
+	/* Main2 */
+
+		#main2  {
+			padding: 12em 0 10em 0 ;
+			/*background-image: url("../images/pfhExample1.gif");*/
+
+			/*background-image: -moz-linear-gradient(top, rgba(0,0,0,1), rgba(0,0,0,1)), url("images/pfhExample1.gif");
+			background-image: -webkit-linear-gradient(top, rgba(0,0,0,1), rgba(0,0,0,1)), url("images/pfhExample1.gif");
+			background-image: -ms-linear-gradient(top, rgba(0,0,0,1), rgba(0,0,0,1)), url("images/pfhExample1.gif");
+			background-image: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0)), url("images/pfhExample1.gif");*/
+			/*background-attachment: fixed;*/
+			background-position: top;
+			background-repeat: no-repeat;
+			/*background-size: cover;*/
+			text-align: center;
+			background-color: black;
+		}
+
+		#main2gif {
+			z-index: -100;
+			margin-top: -50%;
+
+		}
+		#h2-main{
+			z-index: 999;
+		}
+
+			#main2 > header h2 {
+				font-size: 1.75em;
+				margin: 0 0 0.5em 0;
+			}
+
+			#main2 > header p {
+				color: inherit;
+				letter-spacing: 0.225em;
+				text-transform: uppercase;
+				top: 0;
+			}
+
+				#main2 > header p a {
+					color: inherit;
+				}
+
+			@media screen and (max-width: 1680px) {
+
+				#main2 > header {
+					padding: 10em 0 8em 0 ;
+				}
+
+			}
+
+			@media screen and (max-width: 1280px) {
+
+				#main2 > header {
+					padding: 8em 3em 6em 3em ;
+				}
+
+			}
+
+			@media screen and (max-width: 980px) {
+
+				#main2 > header {
+					padding: 10em 3em 8em 3em ;
+				}
+
+			}
+
+			@media screen and (max-width: 736px) {
+
+				#main2 > header {
+					padding: 5em 3em 3em 3em ;
+				}
+
+					#main2 > header h2 {
+						font-size: 1.25em;
+						margin: 0 0 1em 0;
+					}
+
+			}
+
+		body.is-mobile #main2 > header {
+			background-attachment: scroll;
+		}
+
 
 /* Footer */
 
