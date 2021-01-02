@@ -6,11 +6,10 @@
 -->
 <html>
 	<head>
-		<title>Thomas hodgetts</title>
+		<title>Chat App</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<link href="assets/css/pacman.css" rel="stylesheet"/>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -19,8 +18,8 @@
 			<div id="page-wrapper">
 
 				<!-- Header -->
-				<header id="header">
-					<h1><a href="index.html">Thomas Hodgetts</a></h1>
+				<header id="header" class="alt">
+					<h1><a href="index.html">Thomas Hodgetts</h1>
 					<nav id="nav">
 						<ul>
 							<li class="special">
@@ -32,7 +31,7 @@
 										<li><a href="OpenGL.html">A OpenGL Enviroment</a></li>
 										<li><a href="UnityGame.html">Unity Space Shooter</a></li>
 										<li><a href="generic.html">Chat Client and Server</a></li>
-										<li><a href="Projects.html">Previous Projects</a></li>
+										<li><a href="Projects.html">Previous Projects</a></
 									</ul>
 								</div>
 							</li>
@@ -42,33 +41,20 @@
 
 				<!-- Main -->
 					<article>
-						<header id ="main2">
-							<h2>Pacman Using C++ and S2D</h2>
-							<p>My first adventure into programming games in C++</p>
-
-							<!--pacman CSS3-->
-								<div class="pacman">
-									<div class="pacman-top"></div>
-									<div class="pacman-bottom"></div>
-									<div class="feed"></div>
-								</div>
-							<!--pacman CSS3 END-->
+						<header  id="main2">
+							<h2>Chat App</h2>
+							<p>My experiences developing multi-threaded and networking applications</p>
+							<br></br>
 						</header>
 						<section class="wrapper style5">
 							<div class="inner">
 
-								<h3>The Vulkan Venture</h3>
-								<p>I first started trying to build my Pacman I tried to replace S2D with Vulkan. I wanted to do this as I wanted to gain experience in Vulkan. So using the Vulkan tutorials provided by the Kronos group and tried to build my game around that. This was too ambitious and I quickly realised that I was not going to be able to complete the project on time before the deadline was due.</p>
-								<p>While I had made progress with setting up and instance, and then rendered an 2D object in a window, I was not progressing nearly fast enough to meet my deadlines, so I made the choice to switch from Vulkan back to S2D midway through my assignment</p>
-
+								<h3>Threads, here, there, everywhere</h3>
+								<p>A main element to this university project was threading. We spent our first few weeks experimenting and learning the challenges of threading, such as live lock and the philosopher’s problem. The language we used to hone our threading skills was C# due to its ability to easily manage threads and create them. Overall I really enjoyed using threads as they gave me the ability to manage multiple tasks at once in a way I hadn’t thought of before which was especially handy when it came to using WPF as it allowed me to run tasks while a thread managed the UI.</p>
 								<hr />
 
-								<h4> The Pacman Predicament</h4>
-								<p>With making the switch back to the universities internal tool I now was operating on a much shorter deadline due to all the time I had spent on trying to make Vulkan work. This was not easy and I spent many late nights working on my project until finally I had something considered presentable and worth showing.</p>
-
-								<p>In this final version you are Pacman and you must collect and munchie and cherries that are scattered around the map. While you do this there will be 4 Ghosts that will try to hunt you down while you try and collect all of your cherries.</p>
-
-
+								<h4>Netwroking and Graphics</h4>
+								<p>Another crucial element to the project was networking. Over the period of a couple of months I learnt in detail how to set up a network, the different protocols and encryption methods and how to set up and use packets. Long with learning WPF I was able to create a functional Chat app.  Another Key element was that we must add a graphical element that is synchronised across the network. I choose to make a simple breakout clone and then take that clone and implement it into the application. While it has synchronisation issues, I managed to pull this off using MonoGame</p>
 							</div>
 						</section>
 					</article>
