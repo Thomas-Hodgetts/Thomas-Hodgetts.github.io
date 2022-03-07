@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Thomas hodgetts</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+				<header id="header">
+					<h1><a href="index.html">Thomas Hodgetts</a></h1>
+					<nav id="nav">
+						<ul>
+							<li class="special">
+								<a href="#menu" class="menuToggle"><span>Menu</span></a>
+								<div id="menu">
+									<ul>
+										<li><a href="index.html">Home</a></li>
+										<li><a href="Framework.html">Direct 3D Frameork</a></li>
+										<li><a href="DirectX12Graphics.html">DirectX 12 Graphics</a></li>
+										<li><a href="UnityGame.html">Unity Space Shooter</a></li>
+										<li><a href="Networking.html">Chat Client and Server</a></li>
+										<li><a href="Projects.html">Previous Projects</a></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</nav>
+				</header>
+
+				<!-- Main -->
+					<article id="main2">
+						<header>
+							<h2>DirectX 12 Advanced Graphics</h2>
+							<p>Using DirectX 12 and HLSL to create advanced graphic techniques</p>
+							<br></br>
+						</header>
+						<section class="wrapper style5">
+							<div class="inner">
+
+								<h3>Picking the framework</h3>
+								<p>A key element of working on this project was selecting an API to develop the techniques in. We were given 4 choices of DirectX 11, DirectX 12, OpenGL & Vulkan. Over the years I have had experiences with all 4 APIs in some form except for DirectX 12. For Vulkan I have worked on projects in my own time, for DirectX 11 I worked on this project here and  for OpenGL 1.4, this project here. So knowing that I had some experience with every other API, I choose 12 to further expand my experiences when it came to working with graphical APIs. I knew that there would be some challenges, one being that DirectX 12 gives a lot more control to the developer on how it runs, but in returns expects more from the user when it comes to managing the drawing, frames, and fences. To help myself with this project I began collecting resources such as books and websites to help develop the project.</p>
+								<hr />
+								
+								<h3>Expandig and learning the framework</h3>
+								<p>Developing using DirectX 12 was a lofty challenge, one I was happy to work towards completing. From the offset, the project materials are focused on DirectX 11 meaning that while I would have similar tasks to work on, it wouldn’t be one to one and I would have to investigate how to implement each feature on its own. An example of this would be texture loading. This came as a challenge as instead of creating and then assigning a resource to a pixel shader input, it quickly became about managing heaps and how to access each texture from that heap. This added complexity was overcome by researching online and using books how DirectX 12 handles textures and how to best load them.</p>
+								<hr />
+								
+								<h3>HLSL and Advanced Graphics</h3>
+								<p>Another key element was working with HLSL to create a myriad graphics features, these include: normal mapping, parallax mapping, render to texture and shadow mapping. This was a fun and engaging challenge. This was mainly down to a slight error in one line of code in how colour was determined. This had me develop my debugging skills especially around determining what is causing issues and how to rectify them. The technique I used was splitting the sections of code into their specific parts and then iterate the design to try and locate the issue. Overall, I would say the HLSL code shows an area of development I could improve on which I am quite excited to do.</p>
+							</div>
+						</section>
+					</article>
+
+				<!-- Footer -->
+				<footer id="footer">
+					<ul class="icons">
+						<li><a href="https://twitter.com/ThomasHodgetts" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="https://www.linkedin.com/in/thomas-hodgetts-367412195/" class="icon brands fa-linkedin"><span class="label">linkedin</span></a></li>
+						<li><a href="https://github.com/Thomas-Hodgetts?tab=repositories" class="icon brands fa-github"><span class="label">linkedin</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; ThomasHodgetts</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
