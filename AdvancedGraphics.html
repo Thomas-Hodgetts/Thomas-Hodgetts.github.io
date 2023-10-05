@@ -67,6 +67,10 @@
 								<hr />
 
 								<h3>Animation Systems</h3>
+								<p>With the framework built, functionality to build different types of terrain were added. This brought up many questions in implementation, for example, how would the framework retain detail on the terrain without a huge cost to performance, how would terrain be generated if no data was provided. All these questions would have to be answered to produce a robust terrain system.</p>
+								<p>One technique used to solve terrain challanges was to implement an level of detail system. This was done by lowering details on terrain the further it got away from the camera. This distance was calculated in the hull shader and details were added or taken away in the pixel shader based on distance.</p>
+								<p>Another technique that was deployed was tesselation, allowing for extra detail to be added. This uses the same level of detail system to add extra polygons when needed and remove added polygons when needed.</p>
+								<p>When it comes to the generation of the polygons there are multiple elements to consider, is the terrain flat.</p>
 
 							</div>
 						</section>
