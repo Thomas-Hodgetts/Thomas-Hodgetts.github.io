@@ -18,8 +18,8 @@
 			<div id="page-wrapper">
 
 				<!-- Header -->
-				<header id="header" class="alt">
-					<h1><a href="index.html">Thomas Hodgetts</h1>
+				<header id="header">
+					<h1><a href="index.html">Thomas Hodgetts</a></h1>
 					<nav id="nav">
 						<ul>
 							<li class="special">
@@ -27,8 +27,12 @@
 								<div id="menu">
 									<ul>
 										<li><a href="index.html">Home</a></li>
-										<li><a href="pfExample1.html">Pacman Using C++ and S2D</a></li>
-										<li><a href="	"></a></li>
+										<li><a href="Masters.html">Vulkan Compute Library</a></li>
+										<li><a href="Framework.html">Direct 3D Frameork</a></li>
+										<li><a href="DirectX12Graphics.html">DirectX 12 Graphics</a></li>
+										<li><a href="UnityGame.html">Unity Space Shooter</a></li>
+										<li><a href="Networking.html">Chat Client and Server</a></li>
+										<li><a href="Projects.html">Previous Projects</a></li>
 									</ul>
 								</div>
 							</li>
@@ -37,8 +41,8 @@
 				</header>
 
 				<!-- Main -->
-					<article id="main">
-						<header>
+					<article>
+						<header id="main2">
 							<h2>GPU Compute Library using Vulkan</h2>
 							<p>My Masters of Research Project</p>
 						</header>
@@ -51,23 +55,28 @@
 								<hr />
 
 								<h3>Proposal</h3>
-
+								<p>For this project I wanted to focus on a specific aspect of my undergraduate project to ensure that I had time to guarantee its quality and not stretch myself over multiple subject areas. My proposal focused on trying to build a library that could simplify accessing the GPUs compute potential. During my time working on my undergraduate degree I found it difficult to fully understand how to interact with DirectX along with struggles to tackle bugs that stemmed from simple mistakes and misunderstandings. Originally the Library would again be built on DirectX 12 but my supervisor suggested using Vulkan which I accepted.</p>
+								<p>The first steps of the project first started with identifying what a GPU was and how it was different to other processing units such as a CPU. This was then built out into identifying each processing unit’s strengths and weaknesses and why it would be useful for such a library to exist. The next steps focused on identifying other similar libraries that existed such as OpenMP and tools such as CUDA. It was decided that this project would focus on a library that could be added the project and which would make accessing the GPU easy but would still need developer input to work.</p>
 								<hr />
 
 
 								<h3>Initial Implementation</h3>
 
+								<p>After the core ideas for the project were decided upon next I would need to establish writing to memory and performing code execution. The first project that was tackled was memory management. This resulted in a set of memory management classes that could read and write to memory. It focused on creating pools of memory that could have multiple variables written and read in smaller chunks in one large pool of memory. Once memory management was sorted I moved onto execution management. This was built on collecting commands that a developer wished execute, this was achieved by creating two classes that managed a kernel (compute shader) and a general compute class that allowed for a developer to execute a kernel and to process any commands. The memory management classes were then built into the kernel class to manage the memory for that kernel.</p>
+								<p>All of these elements together built the 1.0 version of the library. Overall while the library achieve the ability to execute code on the GPU and to allow for a developer to collect the results, it was far from perfect. With the aim to make it as simple as possible to use it heavily limited what roles it could be used for and reduced the flexibility of the library, for example kernels could not share memory between each other. So while this was a good start for development, a reworked approach would be needed to ensure that I produced a high quality library.</p>
+								
 								<hr />
 
 								<h3>Further Development</h3>
-
+								
+								<p>The first steps after version 1.0 began with trying to create very specific math classes that on their own could leverage the GPU. However early in the development of these classes it became clear that a common backend would be required to perform the specific of GPU compute that they could all be built on. This became version 2.0. Version 2.0 was built from the ground up to reimplement version 1.0 but in a way that allowed the system to be much more flexible. One key example was how memory was managed, instead of being built into the kernel the memory would be attached to a ‘Memory Adapter’ which could be now bound to multiple kernels. This new reimplementation allow for easier use of the library and quicker execution in most scenarios. While the original idea for the specific math classes where never built, the infrastructure laid down became the core of version 2.0. </p>
+								<p>With version 2.0 being completed there was not much time left in the year and so testing on the library began. This testing included a physics engine, ray tracer and particle system. Each test completed and while slower than the CPU in most cases, was an improvement from my undergraduate degree. With the tests built and the library working data collection and the report was completed and handed in. Overall I was happy with the improvements and I will be making an effort to further optimize and improve the library.</p>
+								
 								<hr />
 
 								<h3>Conclusion</h3>
-								<p>Nam sapien ante, varius in pulvinar vitae, rhoncus id massa. Donec varius ex in mauris ornare, eget euismod urna egestas. Etiam lacinia tempor ipsum, sodales porttitor justo. Aliquam dolor quam, semper in tortor eu, volutpat efficitur quam. Fusce nec fermentum nisl. Aenean erat diam, tempus aliquet erat.</p>
-
-								<p>Etiam iaculis nulla ipsum, et pharetra libero rhoncus ut. Phasellus rutrum cursus velit, eget condimentum nunc blandit vel. In at pulvinar lectus. Morbi diam ante, vulputate et imperdiet eget, fermentum non dolor. Ut eleifend sagittis tincidunt. Sed viverra commodo mi, ac rhoncus justo. Duis neque ligula, elementum ut enim vel, posuere finibus justo. Vivamus facilisis maximus nibh quis pulvinar. Quisque hendrerit in ipsum id tellus facilisis fermentum. Proin mauris dui, at vestibulum sit amet, auctor bibendum neque.</p>
-
+								<p>The last year has been fun, joyful, if a little stressful year. Over the course of this project I have deepened my knowledge of GPGPU compute and have produced a GPU compute library I am proud of even if it is not perfect. I am very grateful to my supervisor for all the help he has given me and I can’t wait to take my experience into the next year and next chapter going forward. I even got to try using an API I have wanted to learn for some time.</p>
+								<b>Overall it couldn't have gone better!!!!</b>
 							</div>
 						</section>
 					</article>
